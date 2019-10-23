@@ -5,13 +5,13 @@ export default class CommentBox extends React.Component {
     
     handleChange = event => {
         this.setState({comment: event.target.value});
-    };
+    }
     
     handleSubmit = event => {
         event.preventDefault(); // Keeps our form from submitting itself.
         
-        //Call an action creator
-
+        // TODO - Call an action creator
+        this.setState({comment:''})
     };
 
     render() {
